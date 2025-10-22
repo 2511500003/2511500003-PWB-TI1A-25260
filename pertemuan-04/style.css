@@ -31,15 +31,8 @@ header li a {
     padding: 6px 12px;
 }
 
-#about {
-    background-color: #ec789f;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+#home,
+#about,
 #contact {
     background-color: #ec789f;
     border-radius: 10px;
@@ -49,6 +42,7 @@ header li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#home h2,
 #about h2,
 #contact h2 {
     font-size: 25px;
@@ -57,6 +51,10 @@ header li a {
     padding-bottom: 6px;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+#home p {
+    text-align: justify;
 }
 
 #about p,
