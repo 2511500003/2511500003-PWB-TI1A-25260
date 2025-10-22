@@ -32,7 +32,7 @@ header li a {
 }
 
 header li a:hover {
-    background-color: #ccc;
+    background-color: #9b034a;
     border-radius: 6px;
     transition: background-color 0,3s ease;
 }
@@ -129,7 +129,13 @@ footet {
 }
 
 @media (max-width: 600px) {
-
+    header {
+        padding: 16px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
     #about p,
     #contact label {
         flex-direction: column;
