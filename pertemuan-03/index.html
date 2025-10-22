@@ -56,51 +56,32 @@
         }
 
         #contact {
-            border: 1px solid pink;
-            background-color: pink;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 700;
-            margin: 20px auto; 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);                                                                                                                                                                                                                                                                                                                         
+        background-color: pink;
+        max-width: 700px;  
+        margin: 10px auto;   
+        border-radius: 20px; 
+        padding: 20px;                                                                                                                                                                                                                                                 
         }
 
         #contact h2 {
-            border-bottom: 2px solid rgb(88, 51, 42);
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-            color: #003366;
+            font-size: 25px;
+            border-bottom: 2px solid white;
         }
-
-        #contact p {
-            display: flex;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-
-        #contact form {
-              border-radius: 20px;
-        }
-
+        
         #contact label {
-            color: rgb(10, 10, 10);
+            color: white
         }
 
         #contact button {
-            color:hsl(0, 0%, 100%);
-            border-radius: 5px;
-            background-color: rgb(241, 80, 134);
+            color:white
+            background-color: black;  
         }
-        #contact input {
-            width: 350px;
-            border-radius: 5px;s
-            margin: 15px;
-
-        }
-        #contact textarea {
-            border-radius: 5px;
-            width: 350px;
+        #contact input 
+        #contact textarea{
+            border-radius: 15px;
+            border: none;
+            box-sizing: border-box;
+            flex: 1;
         }
 
 
@@ -140,19 +121,29 @@
         <section id="contact">
             <h2>Kontak kami</h2>
             <form action="" method="GET">
-                <label for="txtNama">Nama:</label>
+             <p>
+                    <strong><label for="txtNama">Nama:</label></strong>
                 <input maxlength="20" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
                     autocomplate="name">
-
-                <label for="txtEmail">Email:</label>
+             </p>
+                
+             <p>
+                  <strong><label for="txtEmail">Email:</label></strong>
                 <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
-                    autocomplete="email">
+                 autocomplete="email">
+                </p>
 
-                <label for="TxtPesan">Pesan:</label><textarea id="txtPesan"
-                name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+            <p>
+                <strong><label for="TxtPesan">Pesan:</label><textarea id="txtPesan"
+                name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea></strong>
+            </p>
+                
 
-                <button type="submit">Kirim</button>
+
+                <p><button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
+             </p>
+             
             </form>
         </section>
     </main>
