@@ -1,4 +1,3 @@
-# pertemuan-03
 <!DOCTYPE html>
 <html lang="id">
 
@@ -25,7 +24,9 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        #about h2 {
+        #about h2,
+        #contact h2 {
+            font-size: 25px;
             color: #003366;
             border-bottom: 2px solid #003366;
             padding-bottom: 6px;
@@ -33,13 +34,15 @@
             margin-bottom: 16px;
         }
 
-        #about p {
+        #about p,
+        #contact label {
             display: flex;
             justify-content: flex-start;
             align-items: baseline;
-            margin: 0;
+            margin: 8px 0;
+            padding-right: 16px;
+            flex-shrink: 0;
             padding: 6px 0;
-            border-bottom: 1px solid #e6e6e6;
         }
 
         #about strong,
@@ -50,6 +53,32 @@
             text-align: right;
             padding-right: 16px;
             flex-shrink: 0;
+        }
+
+        #contact input,
+        #contact textarea {
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            flex: 1;
+            padding: 8px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        #contact button {
+            color: rgb(226, 152, 152);
+            background-color: black;
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            margin-right: 8px;
+            width: 100%;
         }
 
         @media (max-width: 600px) {
@@ -63,86 +92,23 @@
                 padding-left: 0;
                 margin-bottom: 2px;
             }
-        }
-        #about,
-        #contact {
-        background-color: rgb(255, 255, 255);
-        max-width: 700px;  
-        margin: 10px auto;   
-        border-radius: 20px; 
-        padding: 20px;                                                                                                                                                                                                                                                 
-        }
 
-        #about h2,
-        #contact h2 {
-            font-size: 25px;
-            border-bottom: 2px solid black;
-            color: #003366;
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-        
-        #about p {
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            margin: 0;
-            padding: 6px 0;
-            border-bottom: #e6e6e6;
-        }
+            #about strong,
+            #contact label>span {
+                min-width: 180px;
+                color: #003366;
+                font-weight: 600;
+                text-align: right;
+                padding-right: 16px;
+                flex-shrink: 0;
+            }
 
 
-        #about p,
-        #contact label {
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            margin: 8px 0;
-            padding-right: 16px;
-            flex-shrink: 0;
-            padding: 6px 0;
-         }
-
-        #about strong,
-        #contact label>span {
-            min-width: 180px;
-            color: #003366;
-            font-weight: 600;
-            text-align: right;
-            padding-right: 16px;
-            flex-shrink: 0;
+            #contact input,
+            #contact textarea {
+                width: 100%;
+            }
         }
-        #contact button {
-            color: rgb(226, 152, 152)
-            background-color: black;
-              margin-top 10px;
-              display: inline-block;
-              padding: 10px;24px;
-              font-size: 16px;
-              border-radius: 6px;
-              cursor: pointer;
-              border: none;
-              transition: all 0.3s ease;
-              margin-right: 8px;
-              width: 100%;
-        }
-        #contact input 
-        #contact textarea{
-            border-radius: 3px;
-            border: 1px solid #ccc
-            box-sizing: border-box;
-            flex: 1;
-            padding: 8px;
-            font-weight: normal;
-            margin: 0;
-        }
-
-        #contact input,
-        #contact textarea {
-            width: 100%;
-        }
-
     </style>
 </head>
 
@@ -179,27 +145,26 @@
         <section id="contact">
             <h2>Kontak kami</h2>
             <form action="" method="GET">
-                <label for="txtNama"
-                    <span>Nama</span>
+                <label for="txtNama" <span>Nama</span>
                     <input maxlength="20" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
-                    autocomplate="name">
+                        autocomplate="name">
                 </label>
-                
+
                 <label for="txtEmail">
                     <span>Email:</span>
                     <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
-                 autocomplete="email">
+                        autocomplete="email">
                 </label>
 
                 <label for="TxtPesan">
                     <span>Pesan:</span>
-                    <textarea id="txtPesan"
-                    name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea></strong>
+                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                        required></textarea></strong>
                 </label>
-                
+
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
-             
+
             </form>
         </section>
     </main>
@@ -210,5 +175,3 @@
 </body>
 
 </html>
-
-
