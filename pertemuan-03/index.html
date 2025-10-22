@@ -33,7 +33,8 @@
             border-bottom: 1px solid #e6e6e6;
         }
 
-        #about strong {
+        #about strong,
+        #contact span>label {
             min-width: 180px;
             color: #003366;
             font-weight: 600;
@@ -127,7 +128,10 @@
             margin: 0;
         }
 
-
+        #contact input,
+        #contact textarea {
+            width: 100%;
+        }
 
     </style>
 </head>
@@ -165,29 +169,26 @@
         <section id="contact">
             <h2>Kontak kami</h2>
             <form action="" method="GET">
-             <p>
-                <label for="txtNama"</label>
+                <label for="txtNama"
                     <span>Nama</span>
-                <input maxlength="20" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
+                    <input maxlength="20" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
                     autocomplate="name">
-             </p>
+                </label>
                 
-             <p>
-                  <strong><label for="txtEmail">Email:</label></strong>
-                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
+                <label for="txtEmail">
+                    <span>Email:</span>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
                  autocomplete="email">
-                </p>
+                </label>
 
-            <p>
-                <strong><label for="TxtPesan">Pesan:</label><textarea id="txtPesan"
-                name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea></strong>
-            </p>
+                <label for="TxtPesan">
+                    <span>Pesan:</span>
+                    <textarea id="txtPesan"
+                    name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea></strong>
+                </label>
                 
-
-
-                <p><button type="submit">Kirim</button>
+                <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
-             </p>
              
             </form>
         </section>
