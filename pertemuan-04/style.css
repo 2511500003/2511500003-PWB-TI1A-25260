@@ -104,6 +104,13 @@ header li a {
     width: 100%;
 }
 
+footet {
+    background: #0c0c0c;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
 @media (max-width: 600px) {
 
     #about p,
