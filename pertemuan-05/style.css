@@ -145,7 +145,14 @@ footet {
         left: 16px;
         top: 8px;
     }
-
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #f15670;
+        width: 100%;
+        padding: 5% 0;
+    }
 
     header {
         padding: 16px;
