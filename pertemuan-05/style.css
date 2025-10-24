@@ -153,8 +153,8 @@ footet {
     nav {
         display: none;
         flex-direction: column;
-        background: #dd7575;
-        width: 50%;
+        background: #ccc;
+        width: 100%;
         padding: 5% 0;
     }
 
