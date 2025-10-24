@@ -145,6 +145,10 @@ footet {
         left: 16px;
         top: 8px;
     }
+
+    nav.active {
+        display: flex;
+    }
     
     nav {
         display: none;
