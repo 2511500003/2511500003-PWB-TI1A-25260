@@ -28,6 +28,8 @@
             <h2>Selamat datang</h2>
             <?php
             echo "halo dunia!<br>";
+            echo "halo nama saya Deskia";
+            ?>
             <p>Ini contoh paragraf HMTL.</p>
         </section>
 
