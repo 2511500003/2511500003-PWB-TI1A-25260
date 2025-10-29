@@ -34,9 +34,17 @@
         </section>
 
         <section id="about">
+            <?php
+            $nim = 2511500003;
+            $NIM = 2412062004;
+            ?>
             <h2>Tentang saya</h2>
             <p><strong>Nama Lengkap:</strong>Deskia Adminitasari &#9787</p>
-            <p><strong>NIM:</strong> 2511500003</p>
+            <p><strong>NIM:</strong> 
+            <?php
+            echo $nim;
+            ?>
+            </p>
             <p><strong>Tempat Tanggal Lahir:</strong>Pangkal Niur,24 Desember 2006</p>
             <p><strong>Hobi:</strong>Make up dan Memasak</p>
             <p><strong>Nama Orang tua:</strong>Bapak Sukardi dan Ibu Karmila</p>
@@ -50,19 +58,27 @@
         <section id="contact">
             <h2>Kontak kami</h2>
             <form action="" method="GET">
-                <label for="txtNama">Nama:</label>
-                <input type="text" id="txtNama" name="txtNama" placeholder="masukkan nama"  autocomplete="name">
+                <label for="txtNama"> <span>Nama</span>
+                    <input maxlength="20" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required
+                        autocomplate="name">
+                </label>
 
-                <label for="txtEmail">Email</label>
-                <input type="text" id="txtEmail" placeholder="masukkan email"  autocomplete="email">
+                <label for="txtEmail">
+                    <span>Email:</span>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required
+                        autocomplete="email">
+                </label>
 
-                <label for="txtPesan">Pesan</label>
-                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="tulis pesan anda..." ></textarea>
-                <small id="charCount">0/200 karakter</small>
+                <label for="TxtPesan">
+                    <span>Pesan:</span>
+                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                        required></textarea></strong>
+                    <small id="charCount">0/200 karakter</small>
+
+                </label>
 
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
-                </label>
 
             </form>
         </section>
