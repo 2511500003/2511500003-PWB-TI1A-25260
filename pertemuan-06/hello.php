@@ -131,3 +131,9 @@ echo "<pre>";
 var_dump($hobi);
 echo "</pre>";
 ?>
+
+<?php
+for ($i=1; $i<=5; $i++) {
+echo "Perulangan ke-$i <br>";
+}
+?>
