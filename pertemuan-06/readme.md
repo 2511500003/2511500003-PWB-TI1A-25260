@@ -12,4 +12,5 @@ belajar:
 <li>latihan konstanta</li>
 <li>latihan komentar/remark</li>
 <li>latihan operator dasar</li>
+<li>latihan operator pembanding</li>
 </ol>
