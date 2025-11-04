@@ -60,3 +60,11 @@ const ANGKATAN = 2025;
 echo "Kampus: " . KAMPUS . "<br>";
 echo "Angkatan: " . ANGKATAN;
 ?>
+<?php
+// Ini komentar 1 baris
+# Ini juga komentar 1 baris
+/*
+Ini komentar
+lebih dari satu baris
+*/
+?>
