@@ -19,4 +19,5 @@ belajar:
 <li>Latihan struktur kontrol perulangan dengan for</li>
 <li>Latihan infinite loop</li>
 <li>Tugas Variabel PHP ke section#about</li>
+<li>Tugas PHP Dasar – Kalkulasi Nilai Akhir, Grade, IPK</li>
 </ol>
