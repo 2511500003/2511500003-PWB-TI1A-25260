@@ -5,6 +5,7 @@ Nim:2511500003
 
 belajar:
 <ol>
-<li>hello.php</li>
+<li>Halo, Dunia PHP</li>
 <li>nama saya Deskia</li>
+<li>latihan variabel dan tipe data</li>
 </ol>
