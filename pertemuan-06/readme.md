@@ -18,4 +18,5 @@ belajar:
 <li>Latihan array dan penggunaan print_r() dan var_dump()</li>
 <li>Latihan struktur kontrol perulangan dengan for</li>
 <li>Latihan infinite loop</li>
+<li>Tugas Variabel PHP ke section#about</li>
 </ol>
