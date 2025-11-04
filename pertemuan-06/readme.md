@@ -11,4 +11,5 @@ belajar:
 <li>latihan tipe data</li>
 <li>latihan konstanta</li>
 <li>latihan komentar/remark</li>
+<li>latihan operator dasar</li>
 </ol>
