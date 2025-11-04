@@ -137,3 +137,11 @@ for ($i=1; $i<=5; $i++) {
 echo "Perulangan ke-$i <br>";
 }
 ?>
+
+<?php
+$i = 1;
+do {
+echo "Iterasi ke-$i<br>";
+$i++;
+} while (1 == 1);
+?>
