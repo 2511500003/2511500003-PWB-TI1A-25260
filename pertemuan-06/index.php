@@ -37,22 +37,86 @@
             <?php
             $nim = 2511500003;
             $NIM = 2412062004;
+            $nama = "Deskia Adminitasari &#9787";
+            $NAMA = "Kiaa";
+            $tempattanggallahir = "Pangkal Niur,24 Desember 2006";
+            $TEMPATTANGGALLAHIR = "Bernai,20 April 2004";
+            $hobi = "Memasak, make up";
+            $HOBI = "Tidur";
+            $namaorangtua = "Bapak Sukardi & Ibu Karmila";
+            $NAMAORANGTUA = " Bapak Irwan & Ibu Mila";
+            $alamat = "Desa BERBURA kecamatan Riau Silip";
+            $SELAMAT = "Bernai";
+            $anakke = "1 dari 3 bersaudara";
+            $ANAKKE = " 2 DARI 3 BERSAUDARA";
+            $namasaudara = "Ramdani Adita ke-2 & Afia Savitri ke-3";
+            $NAMASAUDARA = "Rama & Fia";
+            $namapasangan = "siapa?";
+            $NAMAPASANGAN = "Gatau!";
+            $pekerjaan = "Mahasiswa Atma Luhur";
+            $PEKERJAAN = "Pengangguran";
             ?>
             <h2>Tentang saya</h2>
-            <p><strong>Nama Lengkap:</strong>Deskia Adminitasari &#9787</p>
+            <p><strong>Nama Lengkap:</strong>
+            <?php
+            echo$nama;
+            ?>
+            </p>
+
             <p><strong>NIM:</strong> 
             <?php
             echo $nim;
             ?>
             </p>
-            <p><strong>Tempat Tanggal Lahir:</strong>Pangkal Niur,24 Desember 2006</p>
-            <p><strong>Hobi:</strong>Make up dan Memasak</p>
-            <p><strong>Nama Orang tua:</strong>Bapak Sukardi dan Ibu Karmila</p>
-            <p><strong>Alamat:</strong>Dusun Bernai Desa Berbura Kecamatan Riau Silip</p>
-            <p><strong>Anak ke:</strong>1 dari 3 bersudara</p>
-            <p><strong>Nama saudara:</strong>Ramdani Aditya ke-2 (L) dan Afia Savitri ke-3 (P)</p>
-            <p><strong>Nama Pasangan:</strong>Siapa yaa</p>
-            <p><strong>Pekerjaan:</strong>Mahasiswa</p>
+
+            <p><strong>Tempat Tanggal Lahir:</strong>
+            <?php
+            echo$tempattanggallahir;
+            ?>
+            </p>
+
+            <p><strong>Hobi:</strong>
+            <?php
+            echo$hobi;
+            ?>
+            </p>
+
+            <p><strong>Nama Orang tua:</strong>
+            <?php
+            echo$namaorangtua;
+            ?>
+            </p>
+
+            <p><strong>Alamat:</strong>
+            <?php
+            echo$alamat;
+            ?>
+            </p>
+
+            <p><strong>Anak ke:</strong>
+            <?php
+            echo$anakke;
+            ?>
+            </p>
+
+            <p><strong>Nama saudara:</strong>
+            <?php
+            echo$namasaudara; 
+            ?>
+            </p>
+
+            <p><strong>Nama Pasangan:</strong>
+            <?php
+            echo$namapasangan;
+            ?>
+            </p>
+
+            <p><strong>Pekerjaan:</strong>
+            <?php
+            echo$pekerjaan; 
+            ?>
+            </p>
+            
         </section>
 
         <section id="contact">
