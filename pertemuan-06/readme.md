@@ -9,4 +9,5 @@ belajar:
 <li>nama saya Deskia</li>
 <li>latihan variabel dan tipe data</li>
 <li>latihan tipe data</li>
+<li>latihan konstanta</li>
 </ol>
