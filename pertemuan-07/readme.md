@@ -11,4 +11,5 @@ Hari ini,Rabu 05 November 2025<br>
     <li>session di get_proses.php</li>
     <li>redirect dari get_proses.php ke get.php</li>
     <li>copy paste grt.php dan get_proses.php menjadi post.php dan post.proses.php</li>
+    <li>sesuaikan get ke post</li>
 </ol>
