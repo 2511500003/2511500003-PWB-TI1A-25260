@@ -9,4 +9,6 @@ Hari ini,Rabu 05 November 2025<br>
     <li>copy dan rename index.php menjadi get.php, kemudian buat baru get_proses.php untuk action</li>
     <li>isi get_proses.php</li>
     <li>session di get_proses.php</li>
+    <li>redirect dari get_proses.php ke get.php</li>
+    <li>copy paste grt.php dan get_proses.php menjadi post.php dan post.proses.php</li>
 </ol>
