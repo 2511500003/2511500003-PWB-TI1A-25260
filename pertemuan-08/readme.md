@@ -9,4 +9,5 @@ Kelompok: TI1A<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>"membuat section form_profil,h2, form action, label, span,  input</li>
+  <li>membuat session di proses.php</li>
 </ol>
