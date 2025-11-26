@@ -127,7 +127,7 @@ endif;
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $Nama;
+        echo $NAMA;
         ?> &#128526;
       </p>
       <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
