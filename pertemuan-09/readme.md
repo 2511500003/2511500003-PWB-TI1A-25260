@@ -22,4 +22,5 @@ Hari ini,Rabu 26 November 2025<br>
   <li>Tambahkan baris kode baru setelah baris <h2>Tentang Saya</h2> untuk menampilkan array menggunakan looping 
 foreach</li>
 <li>Hapus baris 134-143 di index.php</li>
+<li>Menambah file baru dengan nama fungsi.php di folder pertemuan-09</li>
 </ol>
