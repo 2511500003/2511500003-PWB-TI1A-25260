@@ -21,4 +21,5 @@ Hari ini,Rabu 26 November 2025<br>
   <li>merubah barisan 19-67,dan merubah di barisan sebelum section#about</li>
   <li>Tambahkan baris kode baru setelah baris <h2>Tentang Saya</h2> untuk menampilkan array menggunakan looping 
 foreach</li>
+<li>Hapus baris 134-143 di index.php</li>
 </ol>
