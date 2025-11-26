@@ -17,4 +17,5 @@ Hari ini,Rabu 26 November 2025<br>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>memodif proses.php</li>
+  <li>merubah barisan 23-32 di proses.php</li>
 </ol>
