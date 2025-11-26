@@ -24,4 +24,5 @@ foreach</li>
 <li>Hapus baris 134-143 di index.php</li>
 <li>Menambah file baru dengan nama fungsi.php di folder pertemuan-09</li>
 <li>menambah lagi kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,dan 4 digit tahun</li>
+<li>menambah kode pada fungsi.php untuk merender hasil atau output biodata</li>
 </ol>
