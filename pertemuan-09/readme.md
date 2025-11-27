@@ -26,4 +26,5 @@ foreach</li>
 <li>menambah lagi kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,dan 4 digit tahun</li>
 <li>menambah kode pada fungsi.php untuk merender hasil atau output biodata</li>
 <li>merubah section di index.php</li>
+<li>menambah kode require_once di file fungsi.php</li>
 </ol>
