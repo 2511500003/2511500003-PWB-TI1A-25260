@@ -1,8 +1,6 @@
 <?php
 session_start();
-
 require_once __DIR__ . '/fungsi.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +102,7 @@ require_once __DIR__ . '/fungsi.php';
       "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
       "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
       "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
-      "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+      "adik" => ["label" => "Nama Adik:", "suffix" => ""]
     ];
     ?>
 
@@ -134,25 +132,21 @@ require_once __DIR__ . '/fungsi.php';
         <button type="reset">Batal</button>
       </form>
 
-      <?php 
+      <?php
       $contact = $_SESSION["contact"] ?? [];
 
-      $fieldConfig = [
-        "nama" => ["label" => "Nama", "suffix" => ""],
-        "email" => ["label" => "Email", "suffix" => ""],
-        "pesan" => ["label" => "Pesan", "suffix" => ""],
-      
+      $fieldcontact = [
+        "nama" => ["label" => "Nama:", "suffix" => ""],
+        "email" => ["label" => "Email:", "suffix" => ""],
+        "pesan" => ["label" => "Pesan:", "suffix" => ""]
       ];
       ?>
 
-      <?php if (!empty($sesnama)): ?>
-        <br>
-        <hr>
-        <h2>Yang menghubungi kami</h2>
-        <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
-        <p><strong>Email :</strong> <?php echo $sesemail ?></p>
-        <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
-      <?php endif; ?>
+      <br>
+      <hr>
+      <h2>Yang menghubungi kami</h2>
+      <?= tampilkanBiodata($fieldcontact, $contact) ?>
+
 
 
 
