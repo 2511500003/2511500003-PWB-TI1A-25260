@@ -29,4 +29,5 @@ foreach</li>
 <li>menambah kode require_once di file fungsi.php</li>
 <li>merubah SESSION contact menjadi arrcontat</li>
 <li>merubah fielcontact</li>
+<li>mengedit style.css</li>
 </ol>
