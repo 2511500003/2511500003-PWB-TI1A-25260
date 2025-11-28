@@ -134,6 +134,16 @@ require_once __DIR__ . '/fungsi.php';
         <button type="reset">Batal</button>
       </form>
 
+      <?php 
+      $contact = $_SESSION["contact"] ?? [];
+
+      $fieldConfig = [
+        "nama" => ["label" => "Nama", "suffix" => ""],
+        "email" => ["label" => "Email", "suffix" => ""],
+        "pesan" => ["label" => "Pesan", "suffix" => ""],
+      
+      ];
+      ?>
 
       <?php if (!empty($sesnama)): ?>
         <br>

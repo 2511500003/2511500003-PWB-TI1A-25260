@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $arrcontact = [
   "nama" => $_POST["txtNama"] ?? "",
   "email" => $_POST["txtEmail"] ?? "",
