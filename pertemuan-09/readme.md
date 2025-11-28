@@ -27,4 +27,5 @@ foreach</li>
 <li>menambah kode pada fungsi.php untuk merender hasil atau output biodata</li>
 <li>merubah section di index.php</li>
 <li>menambah kode require_once di file fungsi.php</li>
+<li>merubah SESSION contact menjadi arrcontat</li>
 </ol>
