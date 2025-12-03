@@ -5,3 +5,5 @@ NAMA: DESKIA ADMINITASARI<br>
 Hari ini,Rabu 03 Desember 2025<br>
 
 <li>memindah file dosen dari elearning</li>
+<li>membuat file baru koneksi.php</li>
+<li>menambah kode ke file koneksi.php</li>
