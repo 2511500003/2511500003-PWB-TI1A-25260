@@ -10,3 +10,4 @@ Hari ini,Rabu 03 Desember 2025<br>
 <li>membuka localhost/phpmyadmin</li>
 <li> membuat tabel tbl_tamu yang akan menyimpan data 
 dari form contact di data base</li>
+<li>membuat file read.php</li>
