@@ -13,3 +13,4 @@ dari form contact di data base</li>
 <li>membuat file read.php</li>
 <li>menambah kode pada file read.php</li>
 <li>pengisian data atau record untuk tabel tbl_tamu</li>
+<li>memodif read_inc.php menjadi array</li>
