@@ -12,3 +12,4 @@ Hari ini,Rabu 03 Desember 2025<br>
 dari form contact di data base</li>
 <li>membuat file read.php</li>
 <li>menambah kode pada file read.php</li>
+<li>pengisian data atau record untuk tabel tbl_tamu</li>
