@@ -15,3 +15,4 @@ dari form contact di data base</li>
 <li>pengisian data atau record untuk tabel tbl_tamu</li>
 <li>memodif read_inc.php menjadi array</li>
 <li>modif file index.php baris 146</li>
+<li>hapus baris 133-141 di file index.php</li>
