@@ -11,3 +11,7 @@ Hari ini,Rabu 10 Desember 2025<br>
 <li>ambil data $ POST,trim,htmlspecialchars</li>
 <li>update read_inc.php</li>
 <li>insert tbl_tamu dengan prepared statement mysqli</li>
+<li>menambah validasi</li>
+<li>tambah input captcha sederhana</li>
+<li>menambah field baru di tabel tbl tamu</li>
+<li>tambah kolom created At setelah kolom pesan</li>
