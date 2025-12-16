@@ -10,3 +10,4 @@ Hari ini,Rabu 10 Desember 2025<br>
 <li>menampilkan flash message</li>
 <li>ambil data $ POST,trim,htmlspecialchars</li>
 <li>update read_inc.php</li>
+<li>insert tbl_tamu dengan prepared statement mysqli</li>

@@ -1,13 +1,14 @@
 <?php
-function redirect_ke($utr)
+
+function redirect_ke($url)
 {
-  header("location: " . $utr);
+  header("Location: " . $url);
   exit();
 }
 
-function brsihkan($str)
+function bersihkan($str)
 {
-  return htmlspecialchars(trim ($str));
+  return htmlspecialchars(trim($str));
 }
 
 function tidakKosong($str)
@@ -32,3 +33,5 @@ function tampilkanBiodata($conf, $arr)
   }
   return $html;
 }
+
+?>
