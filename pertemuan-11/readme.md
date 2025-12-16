@@ -8,3 +8,4 @@ Hari ini,Rabu 10 Desember 2025<br>
 <li>update file fungsi.php</li>
 <li>menambah penangkap pesan sukses/gagal index.php</li>
 <li>menampilkan flash message</li>
+<li>ambil data $ POST,trim,htmlspecialchars</li>
