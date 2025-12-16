@@ -9,3 +9,4 @@ Hari ini,Rabu 10 Desember 2025<br>
 <li>menambah penangkap pesan sukses/gagal index.php</li>
 <li>menampilkan flash message</li>
 <li>ambil data $ POST,trim,htmlspecialchars</li>
+<li>update read_inc.php</li>
