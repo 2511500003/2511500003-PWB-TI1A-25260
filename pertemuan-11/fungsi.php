@@ -1,7 +1,13 @@
 <?php
-function bersihkan($str)
+function redirect_ke($utr)
 {
-  return htmlspecialchars(trim($str));
+  header("location: " . $utr);
+  exit();
+}
+
+function brsihkan($str)
+{
+  return htmlspecialchars(trim ($str));
 }
 
 function tidakKosong($str)
