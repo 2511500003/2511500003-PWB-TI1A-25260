@@ -9,3 +9,5 @@ Hari ini,Rabu 17 Desember 2025<br>
 <li>menambah  penampil flash sukses maupun flash error menggunakan session pada read.php sehingga kode utuh 
 pada read.php</li>
 <li>membuat file baru "edit.php"</li>
+<li>menampilkan form dengan data lama yang 
+dibaca berdasarkan cid (prefill form) di file edit.php</li>
