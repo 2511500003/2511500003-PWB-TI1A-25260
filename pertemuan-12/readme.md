@@ -5,3 +5,4 @@ NAMA: DESKIA ADMINITASARI<br>
 Hari ini,Rabu 17 Desember 2025<br>
 
 <li>memindahkan hasil latihan pertemuan 11 ke pertemuan 12</li>
+<li>tambah tombol edit di read.php</li>
