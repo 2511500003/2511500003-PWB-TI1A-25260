@@ -11,3 +11,4 @@ pada read.php</li>
 <li>membuat file baru "edit.php"</li>
 <li>menampilkan form dengan data lama yang 
 dibaca berdasarkan cid (prefill form) di file edit.php</li>
+<li>membuat file baru proses_update.php</li>
