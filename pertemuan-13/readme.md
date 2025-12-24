@@ -8,5 +8,6 @@ NIM: 2511500003
 <li> mengeksport bahan dari bapak yohanes</li>
 <li>menambah link delete file read.php ke file proses_delete.php</li>
 <li>menyalin semua kode file proses_update.php ke file proses_delete.php</li>
-<li>mengedit kode di file proses_delete.php</li>
+<li>update kode di file proses_delete.php</li>
+<li>menambahkan parameter cid untuk link delete di read.php</li>
 </ol>
