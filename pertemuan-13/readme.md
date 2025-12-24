@@ -4,5 +4,8 @@ hari ini, materi terakhir untuk PWD,yaitu rabu 24 Desember 2025
 NAMA: Deskia Adminitasari<br>
 NIM: 2511500003
 
+<ol>
 <li> mengeksport bahan dari bapak yohanes</li>
 <li>menambah link delete file read.php ke file proses_delete.php</li>
+<li>menyalin semua kode file proses_update.php ke file proses_delete.php</li>
+</ol>
