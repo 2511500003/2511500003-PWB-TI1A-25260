@@ -10,4 +10,5 @@ NIM: 2511500003
 <li>menyalin semua kode file proses_update.php ke file proses_delete.php</li>
 <li>update kode di file proses_delete.php</li>
 <li>menambahkan parameter cid untuk link delete di read.php</li>
+<LI>Memperbaiki file proses_delete.php agar menggunakan parameter</LI>
 </ol>
