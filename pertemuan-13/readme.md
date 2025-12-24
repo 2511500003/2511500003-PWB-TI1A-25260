@@ -5,3 +5,4 @@ NAMA: Deskia Adminitasari<br>
 NIM: 2511500003
 
 <li> mengeksport bahan dari bapak yohanes</li>
+<li>menambah link delete file read.php ke file proses_delete.php</li>
