@@ -30,9 +30,10 @@ if ($nama === '') {
 
 if ($email === '') {
   $errors[] = 'Email wajib diisi.';
- } else (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+ } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $errors[] = 'Format e-mail tidak valid.';
  }
+ 
 
  if ($pesan === '') {
   $errors[] = 'Pesan wajib diisi.';
@@ -48,6 +49,10 @@ if ($email === '') {
 
  if (mb_strlen($pesan) < 10) {
   $errors[] = 'Pesan minimal 10 karakter.';
+ }
+
+ if ($captcha!=="6") {
+  $errors[] = 'Jawaban '. $captcha.' captcha salah.';
  }
 
  if (!empty($errors)) {
