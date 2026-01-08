@@ -65,7 +65,7 @@
       <td><?= htmlspecialchars($row['bpasangan']); ?></td>
       <td><?= htmlspecialchars($row['borang_tua']); ?></td>
       <td><?= htmlspecialchars($row['bkakak']); ?></td>
-      <td><?= htmlspecialchars($row['badek']); ?></td>
+      <td><?= htmlspecialchars($row['badik']); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>

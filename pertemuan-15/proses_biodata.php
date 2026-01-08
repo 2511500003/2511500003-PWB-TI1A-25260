@@ -19,7 +19,7 @@ $bpekerjaan  = bersihkan($_POST['txtKerja']  ?? '');
 $bpasangan  = bersihkan($_POST['txtPasangan']  ?? '');
 $borang_tua  = bersihkan($_POST['txtNmOrtu']  ?? '');
 $bkakak  = bersihkan($_POST['txtNmKakak']  ?? '');
-$badek  = bersihkan($_POST['txtNmAdik']  ?? '');
+$badik  = bersihkan($_POST['txtNmAdik']  ?? '');
 
 #Validasi sederhana
 $errors_biodata = []; #ini array untuk menampung semua error yang ada
@@ -60,12 +60,12 @@ if ($bkakak === '') {
   $errors_biodata[] = 'kakak wajib diisi.';
 }
 
-if ($badek === '') {
-  $errors_biodata[] = 'adek wajib diisi.';
+if ($badik === '') {
+  $errors_biodata[] = 'adik wajib diisi.';
 }
 
 
-if (mb_strlen($nama) < 3) {
+if (mb_strlen($bnama) < 3) {
   $errors_biodata[] = 'Nama minimal 3 karakter.';
 }
 
@@ -86,7 +86,7 @@ if (!empty($errors_biodata)) {
     'pasangan' => $bpasangan,
     'orang_tua' => $borang_tua,
     'kakak' => $bkakak,
-    'adek' => $badek,
+    'adik' => $badik,
   ];
 
   $_SESSION['flash_error_biodata'] = implode('<br>', $errors_biodata);
@@ -94,7 +94,7 @@ if (!empty($errors_biodata)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_biodata (bnim, bnama, btempat_tinggal, btanggal_lahir, bhobi, bpekerjaan, bpasangan, borang_tua, bkakak, badek) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)";
+$sql = "INSERT INTO tabel_biodata (bnim, bnama, btempat_tinggal, btanggal_lahir, bhobi, bpekerjaan, bpasangan, borang_tua, bkakak, badik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -103,7 +103,7 @@ if (!$stmt) {
   redirect_ke('index.php#biodata');
 }
 #bind parameter dan eksekusi (s = string)
-mysqli_stmt_bind_param($stmt, "ssssssssss", $bnim, $bnama, $btempat_tinggal, $btanggal_lahir, $bhobi, $bpekerjaan, $bpasangan, $borang_tua, $bkakak, $badek);
+mysqli_stmt_bind_param($stmt, "ssssssssss", $bnim, $bnama, $btempat_tinggal, $btanggal_lahir, $bhobi, $bpekerjaan, $bpasangan, $borang_tua, $bkakak, $badik);
 
 if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesan sukses
   unset($_SESSION['old_biodata']);
@@ -120,7 +120,7 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
     'pasangan' => $bpasangan,
     'orang_tua' => $borang_tua,
     'kakak' => $bkakak,
-    'adek' => $badek,
+    'adik' => $badik,
   ];
   $_SESSION['flash_error_biodata'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke('index.php#biodata');

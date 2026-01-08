@@ -20,3 +20,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>menambah variabel di session errors_biodata</li>
 <li>mengupdate index.php</li>
 <li>mengupdate session old_biodata di file prosses biodata</li>
+<li>mencopy paste file read_inc</li>
