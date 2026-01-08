@@ -37,5 +37,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>edit label biodata di file edit_biodata.php</li>
 <li>update biodata diproses_update biodata</li>
 <li>tamba readonly di form nim</li>
+<li>sesuaikan variabel redirect </li>
 
 </ol>
