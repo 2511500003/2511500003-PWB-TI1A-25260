@@ -38,7 +38,7 @@
     Ambil data lama dari DB menggunakan prepared statement, 
     jika ada kesalahan, tampilkan penanda error.
   */
-  $stmt = mysqli_prepare($conn, "SELECT bid, bnama, btempat_tinggal, btanggal_lahir, bhobi, bpekerjaan, bpasangan, borang_tua, bkakak, badik 
+  $stmt = mysqli_prepare($conn, "SELECT bid, bnim, bnama, btempat_tinggal, btanggal_lahir, bhobi, bpekerjaan, bpasangan, borang_tua, bkakak, badik 
                                     FROM tabel_biodata WHERE bid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error_biodata'] = 'Query tidak benar.';
@@ -58,16 +58,16 @@
 
   #Nilai awal (prefill form)
 
-  $nim = $row["bnim"]  ?? "";
-  $nama = $row["bnama"] ?? "";
-  $tempat_tinggal = $row["btempat_tinggal"] ?? "";
-  $tanggal_lahir  = $row["btanggal_lahir"]  ?? "";
-  $hobi  = $row["bhobi"]  ?? "";
-  $pekerjaan  = $row["bpekerjaan"]  ?? "";
-  $pasangan  = $row["bpasangan"]  ?? "";
-  $orang_tua  = $row["borang_tua"]  ?? "";
-  $kakak  = $row["bkakak"]  ?? "";
-  $adik  = $row["badik"]  ?? "";
+  $bnim = $row["bnim"]  ?? "";
+  $bnama = $row["bnama"] ?? "";
+  $btempat_tinggal = $row["btempat_tinggal"] ?? "";
+  $btanggal_lahir  = $row["btanggal_lahir"]  ?? "";
+  $bhobi  = $row["bhobi"]  ?? "";
+  $bpekerjaan  = $row["bpekerjaan"]  ?? "";
+  $bpasangan  = $row["bpasangan"]  ?? "";
+  $borang_tua  = $row["borang_tua"]  ?? "";
+  $bkakak  = $row["bkakak"]  ?? "";
+  $badik  = $row["badik"]  ?? "";
 
 
   #Ambil error dan nilai old_biodata input kalau ada
@@ -127,13 +127,13 @@
         </div>
       <?php endif; ?>
 
-      <form action="proses_biodata.php" method="POST">
+      <form action="proses_update_biodata.php" method="POST">
 
       <input type="text" name="bid" value="<?= (int)$bid; ?>">
 
 
         <label for="txtNim"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNimEd" placeholder="Masukkan NIM" required value="<?= !empty($bnim) ? $bnim : '' ?>">
+          <input type="text" id="txtNim" name="txtNimEd" placeholder="Masukkan NIM" required readonly value="<?= !empty($bnim) ? $bnim : '' ?>">
         </label>
 
         <label for="txtNmLengkap"><span>Nama Lengkap:</span>
@@ -154,6 +154,7 @@
 
         <label for="txtPasangan"><span>Pasangan:</span>
           <input type="text" id="txtPasangan" name="txtPasanganEd" placeholder="Masukkan Pasangan" required value="<?= !empty($bpasangan) ? $bpasangan : '' ?>">
+      </label>
 
         <label for="txtKerja"><span>Pekerjaan:</span>
           <input type="text" id="txtKerja" name="txtKerjaEd" placeholder="Masukkan Pekerjaan" required value="<?= !empty($bpekerjaan) ? $bpekerjaan : '' ?>">
@@ -169,6 +170,7 @@
 
         <label for="txtNmAdik"><span>Nama Adik:</span>
           <input type="text" id="txtNmAdik" name="txtNmAdikEd" placeholder="Masukkan Nama Adik" required value="<?= !empty($badik) ? $badik : '' ?>">
+        </label>
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
