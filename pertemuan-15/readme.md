@@ -12,3 +12,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>mengganti flash_sukse menjadi flash_sukses_biodata</li>
 <li>mengganti flash_error menjadi flash_error_biodata</li>
 <li>edit kode di file read_biodata menjadi tabel baru </li>
+<li>merubah variabel kontak menjadi variabel biodata</li>
