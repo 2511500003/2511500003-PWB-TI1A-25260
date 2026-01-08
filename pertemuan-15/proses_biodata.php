@@ -22,52 +22,52 @@ $bkakak  = bersihkan($_POST['txtNmKakak']  ?? '');
 $badek  = bersihkan($_POST['txtNmAdik']  ?? '');
 
 #Validasi sederhana
-$errors = []; #ini array untuk menampung semua error yang ada
+$errors_biodata = []; #ini array untuk menampung semua error yang ada
 
 if ($bnim === '') {
-  $errors[] = 'Nim wajib diisi.';
+  $errors_biodata[] = 'Nim wajib diisi.';
 }
 
 if ($bnama === '') {
-  $errors[] = 'Nama wajib diisi.';
+  $errors_biodata[] = 'Nama wajib diisi.';
 }
 
 if ($btempat_tinggal === '') {
-  $errors[] = 'tempat_tinggal wajib diisi.';
+  $errors_biodata[] = 'tempat_tinggal wajib diisi.';
 }
 
 if ($btanggal_lahir === '') {
-  $errors[] = 'tempat_lahir wajib diisi.';
+  $errors_biodata[] = 'tempat_lahir wajib diisi.';
 }
 
 if ($bhobi === '') {
-  $errors[] = 'hobi wajib diisi.';
+  $errors_biodata[] = 'hobi wajib diisi.';
 }
 
 if ($bpekerjaan === '') {
-  $errors[] = 'pekerjaan wajib diisi.';
+  $errors_biodata[] = 'pekerjaan wajib diisi.';
 }
 
 if ($bpasangan === '') {
-  $errors[] = 'pasangan wajib diisi.';
+  $errors_biodata[] = 'pasangan wajib diisi.';
 }
 
 if ($borang_tua === '') {
-  $errors[] = 'orang_tua wajib diisi.';
+  $errors_biodata[] = 'orang_tua wajib diisi.';
 }
 
 if ($bkakak === '') {
-  $errors[] = 'kakak wajib diisi.';
+  $errors_biodata[] = 'kakak wajib diisi.';
 }
 
 if ($badek === '') {
-  $errors[] = 'adek wajib diisi.';
+  $errors_biodata[] = 'adek wajib diisi.';
 }
 
 
 
 if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+  $errors_biodata[] = 'Nama minimal 3 karakter.';
 }
 
 
@@ -76,15 +76,21 @@ if (mb_strlen($nama) < 3) {
 kondisi di bawah ini hanya dikerjakan jika ada error, 
 simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
-if (!empty($errors)) {
+if (!empty($errors_biodata)) {
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
-    'captcha' => $captcha,
+    'nim'  => $bnim,
+    'nama' => $bnama ,
+    'tempat_tinggal' => $btempat_tinggal,
+    'tanggal_lahir' => $btanggal_lahir,
+    'hobi' => $bhobi,
+    'pekerjaan' => $bpekerjaan,
+    'pasangan' => $bpasangan,
+    'orang_tua' => $borang_tua,
+    'kakak' => $bkakak,
+    'adek' => $badek,
   ];
 
-  $_SESSION['flash_error'] = implode('<br>', $errors);
+  $_SESSION['flash_error'] = implode('<br>', $errors_biodata);
   redirect_ke('index.php#biodata');
 }
 

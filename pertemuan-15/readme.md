@@ -17,3 +17,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>merubah index.php#concatc menjadi index.php#biodata</li>
 <li>merubah variabel nama menjadi bnim di file prosses_biodata.php</li>
 <li>update proses_biodata.php</li>
+<li>menambah variabel di session errors_biodata</li>
