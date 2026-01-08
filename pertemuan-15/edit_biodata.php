@@ -174,6 +174,7 @@
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
+        <a href="read_biodata.php" class="reset">Kembali</a>
       </form>
     </section>
     </main>

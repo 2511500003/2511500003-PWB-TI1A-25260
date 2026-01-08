@@ -136,9 +136,7 @@ if (mb_strlen($bnama) < 3) {
     'orang_tua' => $borang_tua,
     'kakak' => $bkakak,
     'adik' => $badik,
-
     ];
-
     $_SESSION['flash_error_biodata'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('edit_biodata.php?bid='. (int)$bid);
   }
