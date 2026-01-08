@@ -33,5 +33,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>ganti read.php jadi read_biodata.php</li>
 <li>ganti variabel di edit_biodata</li>
 <li>menambahkan variabel old_biodata di file edit_biodata.php</li>
+<li>ganti read.php di read_biodata menjadi read_biodata</li>
 
 </ol>
