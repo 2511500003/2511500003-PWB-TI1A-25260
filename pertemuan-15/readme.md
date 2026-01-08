@@ -16,4 +16,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>merubah variabel kontak menjadi variabel biodata</li>
 <li>merubah index.php#concatc menjadi index.php#biodata</li>
 <li>merubah variabel nama menjadi bnim di file prosses_biodata.php</li>
-<li></li>
+<li>update proses_biodata.php</li>
