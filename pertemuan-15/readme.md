@@ -5,6 +5,7 @@ Nim: 2511500003<br>
 
 hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 
+<ol>
 <li>memindakahkan file dosen ke pertemuan 15</li>
 <li>hapus index.php</li>
 <li>membuat tabel biodata di phpmyadmin</li>
@@ -25,3 +26,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>merubah fielContact menjadi fielBiodata</li>
 <li>merubah arrContact menjadi fielBiodata</li>
 <li>mengupdate index.php (<?php include 'read_inc_biodata.php'; ?>)</li>
+<li>mencopy paste file edit.php</li>
+
+</ol>
