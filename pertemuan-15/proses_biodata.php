@@ -10,10 +10,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 #ambil dan bersihkan nilai dari form
-$nama  = bersihkan($_POST['txtNama']  ?? '');
-$email = bersihkan($_POST['txtEmail'] ?? '');
-$pesan = bersihkan($_POST['txtPesan'] ?? '');
-$captcha = bersihkan($_POST['txtCaptcha'] ?? '');
+$bnim  = bersihkan($_POST['txtNama']  ?? '');
+$bnama = bersihkan($_POST['txtEmail'] ?? '');
+$btempat_tinggal = bersihkan($_POST['txtPesan'] ?? '');
+$btanggal_lahir = bersihkan($_POST['txtCaptcha'] ?? '');
+$bhobi  = bersihkan($_POST['txtNama']  ?? '');
+$bpekerjaan  = bersihkan($_POST['txtNama']  ?? '');
+$bpasangan  = bersihkan($_POST['txtNama']  ?? '');
+$borang_tua  = bersihkan($_POST['txtNama']  ?? '');
+$bkakak  = bersihkan($_POST['txtNama']  ?? '');
+$badek  = bersihkan($_POST['txtNama']  ?? '');
 
 #Validasi sederhana
 $errors = []; #ini array untuk menampung semua error yang ada
