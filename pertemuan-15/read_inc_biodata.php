@@ -37,5 +37,7 @@ if (!$q) {
     ];
     echo tampilkanBiodata($fieldBiodata, $arrBiodata);
   }
+
 }
+
 ?>

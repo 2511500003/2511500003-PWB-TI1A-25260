@@ -24,3 +24,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>rename read_inc menjadi read_inc_biodata</li>
 <li>merubah fielContact menjadi fielBiodata</li>
 <li>merubah arrContact menjadi fielBiodata</li>
+<li>mengupdate index.php (<?php include 'read_inc_biodata.php'; ?>)</li>
