@@ -30,4 +30,5 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>rename edit.php jadi edit_biodata.php</li>
 <li>ganti cid jadi bid</li>
 <li>ganti flas_errors jadi flas_errors_biodata</li>
+<li>ganti read.php jadi read_biodata.php</li>
 </ol>
