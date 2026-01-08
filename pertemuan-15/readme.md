@@ -29,5 +29,5 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>mencopy paste file edit.php</li>
 <li>rename edit.php jadi edit_biodata.php</li>
 <li>ganti cid jadi bid</li>
-
+<li>ganti flas_errors jadi flas_errors_biodata</li>
 </ol>

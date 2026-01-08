@@ -26,12 +26,12 @@
   /*
     Cek apakah $bid bernilai valid:
     Kalau $bid tidak valid, maka jangan lanjutkan proses, 
-    kembalikan pengguna ke halaman awal (read.php) sembari 
+    kembalikan pengguna ke halaman awal (read_biodata.php) sembari 
     mengirim penanda error.
   */
   if (!$bid) {
-    $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('read.php');
+    $_SESSION['flash_error_biodata'] = 'Akses tidak valid.';
+    redirect_ke('read_biodata.php');
   }
 
   /*
@@ -41,8 +41,8 @@
   $stmt = mysqli_prepare($conn, "SELECT bid, cnama, cemail, cpesan 
                                     FROM tbl_tamu WHERE bid = ? LIMIT 1");
   if (!$stmt) {
-    $_SESSION['flash_error'] = 'Query tidak benar.';
-    redirect_ke('read.php');
+    $_SESSION['flash_error_biodata'] = 'Query tidak benar.';
+    redirect_ke('read_biodata.php');
   }
 
   mysqli_stmt_bind_param($stmt, "i", $bid);
@@ -52,8 +52,8 @@
   mysqli_stmt_close($stmt);
 
   if (!$row) {
-    $_SESSION['flash_error'] = 'Record tidak ditemukan.';
-    redirect_ke('read.php');
+    $_SESSION['flash_error_biodata'] = 'Record tidak ditemukan.';
+    redirect_ke('read_biodata.php');
   }
 
   #Nilai awal (prefill form)
@@ -62,9 +62,9 @@
   $pesan = $row['cpesan'] ?? '';
 
   #Ambil error dan nilai old input kalau ada
-  $flash_error = $_SESSION['flash_error'] ?? '';
+  $flash_error_biodata = $_SESSION['flash_error_biodata'] ?? '';
   $old = $_SESSION['old'] ?? [];
-  unset($_SESSION['flash_error'], $_SESSION['old']);
+  unset($_SESSION['flash_error_biodata'], $_SESSION['old']);
   if (!empty($old)) {
     $nama  = $old['nama'] ?? $nama;
     $email = $old['email'] ?? $email;
@@ -98,10 +98,10 @@
     <main>
       <section id="contact">
         <h2>Edit Buku Tamu</h2>
-        <?php if (!empty($flash_error)): ?>
+        <?php if (!empty($flash_error_biodata)): ?>
           <div style="padding:10px; margin-bottom:10px; 
             background:#f8d7da; color:#721c24; border-radius:6px;">
-            <?= $flash_error; ?>
+            <?= $flash_error_biodata; ?>
           </div>
         <?php endif; ?>
         <form action="proses_update.php" method="POST">
@@ -133,7 +133,7 @@
 
           <button type="submit">Kirim</button>
           <button type="reset">Batal</button>
-          <a href="read.php" class="reset">Kembali</a>
+          <a href="read_biodata.php" class="reset">Kembali</a>
         </form>
       </section>
     </main>
