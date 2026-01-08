@@ -28,5 +28,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>mengupdate index.php (<?php include 'read_inc_biodata.php'; ?>)</li>
 <li>mencopy paste file edit.php</li>
 <li>rename edit.php jadi edit_biodata.php</li>
+<li>ganti cid jadi bid</li>
 
 </ol>
