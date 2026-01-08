@@ -21,5 +21,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>mengupdate index.php</li>
 <li>mengupdate session old_biodata di file prosses biodata</li>
 <li>mencopy paste file read_inc</li>
-<li>rename read_inc menjadi read_inc_biodata</li
+<li>rename read_inc menjadi read_inc_biodata</li>
 <li>merubah fielContact menjadi fielBiodata</li>
+<li>merubah arrContact menjadi fielBiodata</li>
