@@ -27,5 +27,6 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>merubah arrContact menjadi fielBiodata</li>
 <li>mengupdate index.php (<?php include 'read_inc_biodata.php'; ?>)</li>
 <li>mencopy paste file edit.php</li>
+<li>rename edit.php jadi edit_biodata.php</li>
 
 </ol>
