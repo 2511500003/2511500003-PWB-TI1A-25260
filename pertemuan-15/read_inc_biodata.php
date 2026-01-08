@@ -1,13 +1,21 @@
 <?php
 require 'koneksi.php';
 
-$fieldContact = [
+$fieldBiodata = [
+  "nim" => ["label" => "Nim:", "suffix" => ""],
   "nama" => ["label" => "Nama:", "suffix" => ""],
-  "email" => ["label" => "Email:", "suffix" => ""],
-  "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
+  "tempat_tinggal" => ["label" => "Tempat_tinggal:", "suffix" => ""],
+  "tanggal_lahir" => ["label" => "Tanggal_lahir:", "suffix" => ""],
+  "hobi" => ["label" => "Hobi:", "suffix" => ""],
+  "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => ""],
+  "pasangan" => ["label" => "Pasangan:", "suffix" => ""],
+  "orang_tua" => ["label" => "Orang_tua:", "suffix" => ""],
+  "kakak" => ["label" => "Kakak:", "suffix" => ""],
+  "adik" => ["label" => "Adik:", "suffix" => ""],
+
 ];
 
-$sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
+$sql = "SELECT * FROM tabel_biodata ORDER BY bid DESC";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
   echo "<p>Gagal membaca data tamu: " . htmlspecialchars(mysqli_error($conn)) . "</p>";
@@ -15,12 +23,19 @@ if (!$q) {
   echo "<p>Belum ada data tamu yang tersimpan.</p>";
 } else {
   while ($row = mysqli_fetch_assoc($q)) {
-    $arrContact = [
-      "nama"  => $row["cnama"]  ?? "",
-      "email" => $row["cemail"] ?? "",
-      "pesan" => $row["cpesan"] ?? "",
+    $arrBiodata = [
+      "nim"  => $row["bnim"]  ?? "",
+      "nama" => $row["bnama"] ?? "",
+      "tempat_tinggal" => $row["btempat_tinggal"] ?? "",
+      "tanggal_lahir"  => $row["btanggal_lahir"]  ?? "",
+      "hobi"  => $row["bhobi"]  ?? "",
+      "pekerjaan"  => $row["bpekerjaan"]  ?? "",
+      "pasangan"  => $row["bpasangan"]  ?? "",
+      "orang_tua"  => $row["borang_tua"]  ?? "",
+      "kakak"  => $row["bkakak"]  ?? "",
+      "adik"  => $row["badik"]  ?? "",
     ];
-    echo tampilkanBiodata($fieldContact, $arrContact);
+    echo tampilkanBiodata($fieldBiodata, $arrBiodata);
   }
 }
 ?>
