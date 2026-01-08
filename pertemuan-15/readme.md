@@ -8,3 +8,4 @@ hari ini tanggal 7 Januari 2026,saya telah mengerjakan soal tryout<br>
 <li>memindakahkan file dosen ke pertemuan 15</li>
 <li>membuat tabel biodata di phpmyadmin</li>
 <li>mengisi data di tabel yang baru saja di buat </li>
+<li>mencopy read.php dan merubah menjadi read_biodata.php</li>
