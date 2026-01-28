@@ -11,4 +11,5 @@ hari ini tanggal 28 Januari 2026,saya telah mengerjakan soal UAS<br>
 <li>membuat tabel baru biodata dosen di localhost database</li>
 <li>mengupdate mysql di database biodata dosen</li>
 <li>merubah arrBiodata </li>
+<li>mengedit error biodata<li>
 </ol>
