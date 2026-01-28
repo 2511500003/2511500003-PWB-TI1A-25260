@@ -3,6 +3,11 @@ session_start();
 require __DIR__ . './koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
+#cek method
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  $_SESSION['flash_error_biodata'] = 'Akses tidak valid.';
+  redirect_ke('index.php#biodata');
+}
 /*
 	ikuti cara penulisan proses.php untuk validasi, sanitasi, RPG, data old
 	dan insert ke tbl_tamu termasuk flash message ke index.php#biodata
@@ -77,7 +82,10 @@ if (!empty($errors_biodata)) {
     'ilmu' => $ilmu,
     ];
 
-
+    #insert ke tabel
+$sql = "INSERT INTO tbl_biodata_dosen
+(kodedos, nama, alamat, tanggal, jja, prodi, nohp, pasangan, anak, ilmu)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $_SESSION["biodata"] = $arrBiodata;
 
