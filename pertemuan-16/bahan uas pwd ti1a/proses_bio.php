@@ -63,6 +63,20 @@ if ($ilmu === '') {
   $errors_biodata[] = 'ilmu wajib diisi.';
 }
 
+if (!empty($errors_biodata)) {
+  $_SESSION['old_biodata'] = [
+    'kodedos'  => $kodedos,
+    'nama' => $nama ,
+    'alamat' => $alamat,
+    'tanggal' => $tanggal,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'nohp' => $nohp,
+    'pasangan' => $bpasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu,
+    ];
+
 
 
 $_SESSION["biodata"] = $arrBiodata;
